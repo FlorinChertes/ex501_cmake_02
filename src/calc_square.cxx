@@ -11,10 +11,10 @@ int main (int argc, char *argv[])
     return 1;
   }
   
-  double inputValue = atof(argv[1]);
+  const double inputValue = atof(argv[1]);
   double outputValue = sqrt(inputValue);
   
-  fprintf(stdout,"The square root of: %g is: %g\n",
+  fprintf(stdout,"The square root of the number : %g is: %g\n",
           inputValue, outputValue);
   
   return 0;
