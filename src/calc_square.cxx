@@ -12,10 +12,14 @@ int main (int argc, char *argv[])
   }
   
   const double inputValue = atof(argv[1]);
-  double outputValue = sqrt(inputValue);
+  double sqrt_root_tValue = sqrt(inputValue);
+  double sqrt_value = inputValue * inputValue;
   
   fprintf(stdout,"The square root of the number : %g is: %g\n",
-          inputValue, outputValue);
+          inputValue, sqrt_root_tValue);
+  
+  fprintf(stdout,"The square of the number : %g is: %g\n",
+          inputValue, sqrt_value);
   
   return 0;
 }
